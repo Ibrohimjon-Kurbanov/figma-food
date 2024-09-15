@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Food</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="container">
+        <div class="header__container">
+          <a class="logo-link" href="#">
+            <img
+              class="logo-link__image"
+              src="./images/logo.svg"
+              alt="site-logo"
+            />
+            <span>food<span class="logo-link__text">waGon</span></span>
+          </a>
+          <div class="location">
+            <h4 class="location__title">Deliver to:</h4>
+            <i class="fa-solid fa-location-dot"></i>
+            <p class="location__desc">Current Location</p>
+            <h4 class="location__title-2">Mohammadpur Bus Stand, Dhaka</h4>
+          </div>
+          <div class="header__right">
+            <div class="header__search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input type="text" placeholder="Search Food" />
+            </div>
+            <div class="header__btn">
+              <button class="btn-login" type="submit">
+                <i class="fa-solid fa-user"></i
+                ><span class="btn-text">Login</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- MAIN -->
+    <main class="main">
+      <!-- HERO -->
+      <section class="hero">
+        <div class="hero__container container">
+          <div class="hero__wrapper">
+            <div class="hero__info">
+              <h1 class="hero__title">Are you starving?</h1>
+              <p class="hero__description">
+                Within a few clicks, find meals that are accessible near you
+              </p>
+            </div>
+            <div class="hero__wrap">
+              <div class="hero__top">
+                <a class="delivery__btn1" href="#">
+                  <i class="fa-solid fa-motorcycle"></i>
+                  <h4>Delivery</h4>
+                </a>
+                <a class="delivery__btn2" href="#">
+                  <i class="fa-solid fa-bag-shopping"></i>
+                  <h4>Pickup</h4>
+                </a>
+              </div>
+              <form class="hero__bottom">
+                <div class="form__search">
+                  <div class="form__wrap">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <input
+                      type="text"
+                      placeholder="Enter Your Address"
+                      required
+                    />
+                  </div>
+                </div>
+                <button class="form__btn" type="submit">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                  <span>Find Food</span>
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="hero__image">
+            <img
+              class="hero__pic"
+              src="./images/hero-img.png"
+              alt="food"
+              width="438"
+              height="438"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- FOODS -->
+      <section class="foods">
+        <div class="foods__container container">
+          <div class="foods__box">
+            <img
+              class="foods__pic"
+              src="./images/food-1.png"
+              alt="food"
+              width="357"
+              height="301"
+            />
+            <h3 class="foods__title">Greys Vage</h3>
+            <h3 class="foods__text">6 Days Remaining</h3>
+          </div>
+          <div class="foods__box">
+            <img
+              class="foods__pic"
+              src="./images/food-2.png"
+              alt="food"
+              width="357"
+              height="301"
+            />
+            <h3 class="foods__title">Greys Vage</h3>
+            <h3 class="foods__text">6 Days Remaining</h3>
+          </div>
+          <div class="foods__box">
+            <img
+              class="foods__pic"
+              src="./images/food-3.png"
+              alt="food"
+              width="357"
+              height="301"
+            />
+            <h3 class="foods__title">Greys Vage</h3>
+            <h3 class="foods__text">7 Days Remaining</h3>
+          </div>
+          <div class="foods__box">
+            <img
+              class="foods__pic"
+              src="./images/food-4.png"
+              alt="food"
+              width="357"
+              height="301"
+            />
+            <h3 class="foods__title">Greys Vage</h3>
+            <h3 class="foods__text">8 Days Remaining</h3>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

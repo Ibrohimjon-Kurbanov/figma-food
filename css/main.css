@@ -1,0 +1,469 @@
+/* source-code-pro-regular - cyrillic_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Source Code Pro";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/source-code-pro-v23-cyrillic_latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* source-code-pro-700 - cyrillic_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Source Code Pro";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/source-code-pro-v23-cyrillic_latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* open-sans-regular - cyrillic_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/open-sans-v40-cyrillic_latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* open-sans-600 - cyrillic_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/open-sans-v40-cyrillic_latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* open-sans-700 - cyrillic_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/open-sans-v40-cyrillic_latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* GLOBAL */
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  list-style: none;
+  transition: all 0.4s linear;
+}
+
+html {
+  height: 100%;
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6.5rem;
+}
+
+body {
+  font-family: "Source Code Pro", sans-serif;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+a {
+  display: inline-block;
+}
+
+img {
+  display: flex;
+}
+
+/* CONTAINER */
+.container {
+  width: 100%;
+  max-width: 1475.65px;
+  margin: 0 auto;
+}
+
+/* MAIN */
+.main {
+  flex-grow: 1;
+}
+
+.header {
+  padding-top: 1.6rem;
+  padding-bottom: 1.6rem;
+}
+.header .header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .logo-link {
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.header .logo-link span {
+  color: rgb(241, 114, 40);
+  font-size: 3.111rem;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: -2.5%;
+}
+.header .logo-link .logo-link__text {
+  color: rgb(255, 179, 14);
+  font-size: 3.111rem;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.header .location {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.header .location .location__title {
+  color: rgb(66, 66, 66);
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+.header .location .fa-location-dot {
+  color: rgb(255, 179, 14);
+  font-size: 1.8rem;
+  font-weight: 900;
+  line-height: 140%;
+  letter-spacing: 0%;
+  margin: 0 5px 0 5px;
+}
+.header .location .location__desc {
+  color: rgb(66, 66, 66);
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: 0%;
+}
+.header .location .location__title-2 {
+  color: rgb(66, 66, 66);
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 140%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.header .header__right {
+  display: flex;
+  align-items: center;
+}
+.header .header__right .header__search {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.header .header__right .header__search input {
+  width: 124px;
+  color: rgb(66, 66, 66);
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0%;
+  margin-right: 3rem;
+}
+.header .header__right .header__search ::-moz-placeholder {
+  color: rgb(66, 66, 66);
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+.header .header__right .header__search ::placeholder {
+  color: rgb(66, 66, 66);
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+.header .header__right .header__search .fa-magnifying-glass {
+  color: rgb(255, 179, 14);
+  font-size: 1.8rem;
+  font-weight: 900;
+  line-height: 100%;
+  letter-spacing: 0%;
+  height: 18px;
+  cursor: pointer;
+}
+.header .header__right .btn-login {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.4rem 2.4rem;
+  border-radius: 8px;
+  box-shadow: 0px 20px 40px 0px rgba(255, 174, 0, 0.29), 0px 5px 10px 0px rgba(255, 174, 0, 0.26);
+  background: rgb(255, 255, 255);
+  cursor: pointer;
+}
+.header .header__right .btn-login .fa-user {
+  color: #ffb30e;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 100%;
+  letter-spacing: 0%;
+  cursor: pointer;
+}
+.header .header__right .btn-login .btn-text {
+  /* Button Bold */
+  color: rgb(255, 179, 14);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+/* source-code-pro-regular - cyrillic_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Source Code Pro";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/source-code-pro-v23-cyrillic_latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* source-code-pro-700 - cyrillic_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Source Code Pro";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/source-code-pro-v23-cyrillic_latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* open-sans-regular - cyrillic_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/open-sans-v40-cyrillic_latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* open-sans-600 - cyrillic_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/open-sans-v40-cyrillic_latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* open-sans-700 - cyrillic_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/open-sans-v40-cyrillic_latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+.hero {
+  background-image: url("../images/hero-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 13.2rem;
+}
+
+.hero__container {
+  display: flex;
+  justify-content: space-between;
+}
+.hero__container .hero__title {
+  font-family: "Arial", sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 8.8rem;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0%;
+  margin-bottom: 1.5rem;
+}
+.hero__container .hero__description {
+  /* Headline 6 */
+  color: rgb(80, 79, 79);
+  font-family: "Arial", sans-serif;
+  font-size: 2.2rem;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: 0%;
+  margin-bottom: 3.2rem;
+}
+.hero__container .hero__pic {
+  margin-top: 7rem;
+}
+
+.hero__top {
+  background-color: #fff;
+  width: 856px;
+  border-radius: 12px 12px 0 0;
+  padding: 2.4rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  /* Theme/Gray 200 */
+  border-bottom: 1px solid rgb(238, 238, 238);
+}
+.hero__top .delivery__btn1, .hero__top .delivery__btn2 {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  border-radius: 8px;
+  background: rgba(241, 114, 40, 0.1);
+  padding: 1rem 2.4rem;
+}
+.hero__top .delivery__btn1 h4, .hero__top .delivery__btn2 h4 {
+  /* Button Bold */
+  color: rgb(241, 114, 40);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0%;
+  font-family: "Arial", sans-serif;
+}
+.hero__top .delivery__btn1 .fa-motorcycle, .hero__top .delivery__btn2 .fa-motorcycle {
+  color: rgb(241, 114, 40);
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+.hero__top .delivery__btn2 {
+  background: transparent;
+}
+.hero__top .delivery__btn2 h4 {
+  /* Button Bold */
+  color: rgb(117, 117, 117);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+.hero__top .delivery__btn2 .fa-bag-shopping {
+  color: rgb(117, 117, 117);
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 100%;
+}
+
+.hero__bottom {
+  background-color: white;
+  border-radius: 0 0 12px 12px;
+  padding: 2.4rem 2.7rem 2.4rem 2.4rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+.hero__bottom .form__search {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  flex-grow: 1;
+}
+.hero__bottom .form__wrap {
+  border-radius: 8px;
+  background: rgb(245, 245, 245);
+  padding: 7px 0 8px 16px;
+  width: 100%;
+}
+.hero__bottom .form__wrap input {
+  background: rgb(245, 245, 245);
+  color: rgb(36, 12, 12);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: 0%;
+}
+.hero__bottom .form__wrap ::-moz-placeholder {
+  background: rgb(245, 245, 245);
+  color: rgb(158, 158, 158);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: 0%;
+}
+.hero__bottom .form__wrap ::placeholder {
+  background: rgb(245, 245, 245);
+  color: rgb(158, 158, 158);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: 0%;
+}
+.hero__bottom .form__wrap .fa-location-dot {
+  color: rgb(255, 116, 116);
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 140%;
+  letter-spacing: 0%;
+}
+.hero__bottom .form__btn {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 2.1rem 4.8rem;
+  border-radius: 8px;
+  background: linear-gradient(137.67deg, rgb(255, 122, 122) -39.641%, rgb(247, 89, 0) 135.314%);
+  cursor: pointer;
+}
+.hero__bottom .form__btn span {
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+.hero__bottom .form__btn .fa-magnifying-glass {
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.foods {
+  padding-top: 7.5rem;
+  padding-bottom: 8.8rem;
+}
+.foods .foods__container {
+  display: flex;
+  gap: 1.5rem;
+}
+.foods .foods__box .foods__pic {
+  margin-bottom: 3.2rem;
+}
+.foods .foods__box .foods__title {
+  color: rgb(66, 66, 66);
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: 0%;
+  margin-bottom: 2.2rem;
+}
+.foods .foods__box .foods__text {
+  border-radius: 8px;
+  background: rgba(241, 114, 40, 0.2);
+  color: rgb(241, 114, 40);
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: 0%;
+  padding: 8px 16px;
+  display: inline;
+}/*# sourceMappingURL=main.css.map */
